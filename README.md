@@ -3,7 +3,7 @@
 * 有docker、java及maven环境
 # 执行操作
 * cd到当前项目目录 执行 mvn package docker:build
-* 执行启动 docker run -p 8080:8080 -t springio/springboot-docker 
+* 执行启动 docker run --name springboot-docker -d -p 8080:8080 -t springio/springboot-docker 
 # 验证结果
 * 执行 docker images 查看打包的镜像
 * 执行 docker ps -a 查看当前运行中的容器
